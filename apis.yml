@@ -1,0 +1,391 @@
+aid: jd-com
+name: JD.com (Jingdong)
+description: |
+  JD.com (Jingdong) is one of China's largest direct-sales
+  e-commerce platforms, operating a vast first-party retail
+  business and a third-party (POP) marketplace alongside JD
+  Logistics (one of China's largest integrated logistics
+  networks), JD Health, JD Industrials, JD Property, and JD
+  Cloud. JD exposes two distinct developer platforms: JD Open
+  Platform (open.jd.com) — also known as JOS (Jingdong Open
+  Service) — which hosts the partner / ISV REST API for sellers
+  and ERP / OMS vendors covering ware (product), order,
+  promotion, after-sale, warehouse, finance, customer service,
+  message, JD logistics, and B2B; and JD Cloud (jdcloud.com) —
+  JD's public cloud with compute (Cloud Virtual Machine, GPU,
+  bare metal, function compute), storage (object, block, file),
+  network (VPC, CDN, load balancer), database (MySQL, TiDB,
+  StarDB, Redis, MongoDB, ClickHouse), AI (JoyBuilder, JoyAgent,
+  JoyCode, OCR, speech), and security services.
+type: Index
+position: Provider
+access: Partner
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+  - E-commerce
+  - Marketplace
+  - China
+  - Cloud Platform
+  - Logistics
+  - Retail
+  - JD Open Platform
+  - JD Cloud
+  - JOS
+url: https://raw.githubusercontent.com/api-evangelist/jd-com/refs/heads/main/apis.yml
+created: '2026-05-23'
+modified: '2026-05-23'
+specificationVersion: '0.20'
+apis:
+  - aid: jd-com:jos-authorization
+    name: JD Open Platform (JOS) OAuth Authorization
+    description: |
+      JOS authorization is JD's OAuth 2.0 flow for shop owners
+      and JD enterprise accounts to grant a partner ISV
+      application access. The platform issues an access token
+      and refresh token scoped per shop / pop_id.
+    humanURL: https://open.jd.com/home/home#/doc/common?listId=510
+    baseURL: https://api.jd.com
+    tags:
+      - Authentication
+      - OAuth
+      - JOS
+    properties:
+      - type: Documentation
+        url: https://open.jd.com/home/home#/doc/common?listId=510
+  - aid: jd-com:jos-ware
+    name: JD Open Platform Ware (Product) API
+    description: |
+      The ware (商品) API group covers product creation,
+      modification, deletion, and querying; SKU management,
+      inventory, price adjustments, product attributes, and
+      category management for JD POP merchants.
+    humanURL: https://open.jd.com/home/home#/doc/api?apiCateId=23
+    baseURL: https://api.jd.com
+    tags:
+      - Products
+      - SKUs
+      - Catalog
+      - Inventory
+    properties:
+      - type: Documentation
+        url: https://open.jd.com/home/home#/doc/api?apiCateId=23
+  - aid: jd-com:jos-order
+    name: JD Open Platform Order API
+    description: |
+      The order (订单) API group lets ERP / OMS vendors retrieve
+      JD orders, order details, customer information, and order
+      logistics events; update order status; cancel and split
+      orders; and pull order finance breakdowns.
+    humanURL: https://open.jd.com/home/home#/doc/api?apiCateId=26
+    baseURL: https://api.jd.com
+    tags:
+      - Orders
+      - Fulfillment
+      - Customers
+    properties:
+      - type: Documentation
+        url: https://open.jd.com/home/home#/doc/api?apiCateId=26
+  - aid: jd-com:jos-promotion
+    name: JD Open Platform Promotion API
+    description: |
+      The promotion (促销) API group manages JD shop-level
+      promotions: full reduction, coupons, gift promotions, and
+      time-limited deals — including create / read / update /
+      cancel operations.
+    humanURL: https://open.jd.com/home/home#/doc/api?apiCateId=29
+    baseURL: https://api.jd.com
+    tags:
+      - Promotions
+      - Coupons
+      - Discounts
+    properties:
+      - type: Documentation
+        url: https://open.jd.com/home/home#/doc/api?apiCateId=29
+  - aid: jd-com:jos-after-sale
+    name: JD Open Platform After-Sale (Service) API
+    description: |
+      The after-sale (售后) API group handles return, refund,
+      exchange, and complaint workflows initiated by JD buyers,
+      including approval / rejection actions and reverse-
+      logistics coordination.
+    humanURL: https://open.jd.com/home/home#/doc/api?apiCateId=34
+    baseURL: https://api.jd.com
+    tags:
+      - After-Sale
+      - Returns
+      - Refunds
+      - Complaints
+    properties:
+      - type: Documentation
+        url: https://open.jd.com/home/home#/doc/api?apiCateId=34
+  - aid: jd-com:jos-warehouse
+    name: JD Open Platform Warehouse / Inventory API
+    description: |
+      Inventory and warehouse APIs let merchants synchronize
+      stock levels per warehouse, manage reserved inventory,
+      and reconcile with JD's FBP (Fulfilled by POP) and SOP
+      (Sold on POP) fulfillment modes.
+    humanURL: https://open.jd.com/home/home#/doc/api?apiCateId=24
+    baseURL: https://api.jd.com
+    tags:
+      - Inventory
+      - Warehouse
+      - FBP
+      - SOP
+    properties:
+      - type: Documentation
+        url: https://open.jd.com/home/home#/doc/api?apiCateId=24
+  - aid: jd-com:jos-finance
+    name: JD Open Platform Finance API
+    description: |
+      Finance (财务) APIs return JD seller bills, payout records,
+      invoice information, and reconciliation reports for
+      merchants and their ERP systems.
+    humanURL: https://open.jd.com/home/home#/doc/api?apiCateId=33
+    baseURL: https://api.jd.com
+    tags:
+      - Finance
+      - Payouts
+      - Settlement
+      - Invoices
+    properties:
+      - type: Documentation
+        url: https://open.jd.com/home/home#/doc/api?apiCateId=33
+  - aid: jd-com:jos-shop
+    name: JD Open Platform Shop API
+    description: |
+      Shop (店铺) APIs expose shop information, shop
+      configuration, shop categories, and shop decoration
+      metadata for JD POP merchants.
+    humanURL: https://open.jd.com/home/home#/doc/api?apiCateId=37
+    baseURL: https://api.jd.com
+    tags:
+      - Shop
+      - Profile
+      - Storefront
+    properties:
+      - type: Documentation
+        url: https://open.jd.com/home/home#/doc/api?apiCateId=37
+  - aid: jd-com:jos-customer
+    name: JD Open Platform Customer Service API
+    description: |
+      Customer service (客服) APIs integrate with JD's IM and
+      service workflows — letting merchants pull customer
+      inquiries, route to internal agents, and post agent
+      responses through JD's messaging channel.
+    humanURL: https://open.jd.com/home/home#/doc/api?apiCateId=32
+    baseURL: https://api.jd.com
+    tags:
+      - Customer Service
+      - Messaging
+      - Support
+    properties:
+      - type: Documentation
+        url: https://open.jd.com/home/home#/doc/api?apiCateId=32
+  - aid: jd-com:jos-jdmessage
+    name: JD Open Platform JOS Message Channel
+    description: |
+      The JOS Message Channel pushes near-real-time events for
+      orders, products, after-sale, inventory, and finance to
+      partner-registered endpoints. Partners ack each event and
+      verify the JD signature.
+    humanURL: https://open.jd.com/home/home#/doc/common?listId=520
+    baseURL: https://api.jd.com
+    tags:
+      - Webhooks
+      - Events
+      - Push
+      - Notifications
+    properties:
+      - type: Documentation
+        url: https://open.jd.com/home/home#/doc/common?listId=520
+  - aid: jd-com:jos-logistics
+    name: JD Logistics API
+    description: |
+      The JD Logistics API (JD Quick Pass / JDL) lets merchants
+      and 3PL partners create logistics orders against JD's
+      nationwide network — including waybill generation,
+      pickup booking, and end-to-end tracking events.
+    humanURL: https://open.jd.com/home/home#/doc/api?apiCateId=31
+    baseURL: https://api.jd.com
+    tags:
+      - Logistics
+      - JD Logistics
+      - Waybills
+      - Tracking
+    properties:
+      - type: Documentation
+        url: https://open.jd.com/home/home#/doc/api?apiCateId=31
+  - aid: jd-com:jos-fbp
+    name: JD FBP / 入仓 Fulfillment API
+    description: |
+      The FBP (Fulfilled by POP) API lets merchants register
+      stock into JD's warehouses, generate inbound waybills,
+      and inspect inbound and outbound movements that JD
+      fulfills on the merchant's behalf.
+    humanURL: https://open.jd.com/home/home#/doc/api?apiCateId=24
+    baseURL: https://api.jd.com
+    tags:
+      - FBP
+      - Warehousing
+      - Inbound
+      - Fulfillment
+    properties:
+      - type: Documentation
+        url: https://open.jd.com/home/home#/doc/api?apiCateId=24
+  - aid: jd-cloud:compute
+    name: JD Cloud Compute (VM) API
+    description: |
+      JD Cloud Compute APIs manage Cloud Virtual Machines (CVM),
+      lightweight VMs, GPU instances, bare metal servers, and
+      Function Compute — covering create / scale / snapshot /
+      image lifecycle.
+    humanURL: https://docs.jdcloud.com/cn/virtual-machines/api/overview
+    baseURL: https://vm.jdcloud-api.com
+    tags:
+      - Compute
+      - VM
+      - GPU
+      - IaaS
+    properties:
+      - type: Documentation
+        url: https://docs.jdcloud.com/cn/virtual-machines/api/overview
+  - aid: jd-cloud:object-storage
+    name: JD Cloud Object Storage Service (OSS) API
+    description: |
+      JD Cloud Object Storage is an S3-compatible object store
+      for unstructured data, with bucket / object lifecycle,
+      versioning, lifecycle, and CDN-origin support.
+    humanURL: https://docs.jdcloud.com/cn/object-storage-service/api/overview
+    baseURL: https://oss.jdcloud-api.com
+    tags:
+      - Storage
+      - Object
+      - S3
+      - OSS
+    properties:
+      - type: Documentation
+        url: https://docs.jdcloud.com/cn/object-storage-service/api/overview
+  - aid: jd-cloud:cdn
+    name: JD Cloud CDN API
+    description: |
+      JD Cloud CDN exposes content delivery configuration,
+      cache rule management, purge / prefetch, and usage
+      reporting across JD's global edge network.
+    humanURL: https://docs.jdcloud.com/cn/cdn/api/overview
+    baseURL: https://cdn.jdcloud-api.com
+    tags:
+      - CDN
+      - Edge
+      - Performance
+    properties:
+      - type: Documentation
+        url: https://docs.jdcloud.com/cn/cdn/api/overview
+  - aid: jd-cloud:rds
+    name: JD Cloud Database (RDS) APIs
+    description: |
+      JD Cloud database APIs provision and manage relational
+      databases (MySQL, SQL Server, PostgreSQL, MariaDB),
+      distributed SQL (StarDB, TiDB), and NoSQL services
+      (MongoDB, Redis, Memcached).
+    humanURL: https://docs.jdcloud.com/cn/rds/api/overview
+    baseURL: https://rds.jdcloud-api.com
+    tags:
+      - Database
+      - RDS
+      - MySQL
+      - NoSQL
+    properties:
+      - type: Documentation
+        url: https://docs.jdcloud.com/cn/rds/api/overview
+  - aid: jd-cloud:ai-ocr
+    name: JD Cloud OCR / AI APIs
+    description: |
+      JD Cloud AI Platform exposes OCR (general, ID card,
+      bank card, business license), speech (STT, TTS),
+      computer vision, and the JoyBuilder model development
+      platform.
+    humanURL: https://docs.jdcloud.com/cn/ai-platform/api/overview
+    baseURL: https://aiapi.jdcloud-api.com
+    tags:
+      - OCR
+      - Vision
+      - Speech
+      - JoyBuilder
+      - AI
+    properties:
+      - type: Documentation
+        url: https://docs.jdcloud.com/cn/ai-platform/api/overview
+features:
+  - name: JD Open Platform (JOS)
+    description: Full marketplace API surface for JD POP merchants covering ware, order, promotion, after-sale, inventory, finance, shop, and logistics.
+  - name: JOS Message Channel
+    description: Near-real-time event push for orders, products, after-sale, and inventory, with signature verification.
+  - name: JD Logistics Network
+    description: One of China's largest integrated logistics platforms accessible via API for waybill, pickup, and tracking.
+  - name: JD Cloud Stack
+    description: Full IaaS / PaaS public cloud — compute, storage, network, database, AI, and security — with REST APIs and SDKs.
+  - name: JoyBuilder & JoyAgent
+    description: AI platform for model development, fine-tuning, and agent orchestration on JD Cloud.
+useCases:
+  - name: ERP / OMS Integration
+    description: ERP and OMS vendors connect Chinese merchants' inventory, orders, and fulfillment to JD's POP marketplace.
+  - name: Cross-Border China Selling
+    description: International brands sell into JD via JD Worldwide using the same JOS API surface with cross-border categories.
+  - name: Logistics Outsourcing
+    description: Merchants fulfill orders through JD Logistics (FBP) using inbound-warehouse and waybill APIs.
+  - name: Cloud Infrastructure
+    description: Build and run applications on JD Cloud compute, storage, database, and AI services with REST APIs.
+  - name: Reconciliation
+    description: Pull JD finance, payout, and invoice data into accounting systems for marketplace settlement reconciliation.
+integrations:
+  - name: WeChat Pay
+  - name: Alipay
+  - name: UnionPay
+  - name: JD Pay
+  - name: JD Logistics
+  - name: SF Express
+  - name: ZTO Express
+  - name: SAP
+  - name: Oracle NetSuite
+  - name: Kingdee
+  - name: Yonyou
+authentication:
+  - type: OAuth2AuthorizationCode
+    description: JOS uses OAuth 2.0 authorization-code flow for shops to grant ISV apps access; tokens are scoped per pop_id.
+  - type: AppSecretSignature
+    description: Each JOS API call is signed with MD5 over the App Secret, parameters, and timestamp using JD's signature scheme.
+  - type: AccessKeySignature
+    description: JD Cloud APIs authenticate with Access Key ID and Secret Access Key, signed per request with HMAC-SHA256.
+common:
+  - type: Marketplace
+    url: https://www.jd.com/
+  - type: JDWorldwide
+    url: https://www.jd.id/
+  - type: DeveloperPortal
+    url: https://open.jd.com/
+  - type: Documentation
+    url: https://open.jd.com/home/home#/doc/common
+  - type: APIReference
+    url: https://open.jd.com/home/home#/doc/api
+  - type: JDCloud
+    url: https://www.jdcloud.com/en/
+  - type: JDCloudDocs
+    url: https://docs.jdcloud.com/cn/
+  - type: JDLogistics
+    url: https://www.jdl.com/
+  - type: JDHealth
+    url: https://www.jdhealth.com/
+  - type: ParentCompany
+    url: https://corporate.jd.com/
+  - type: InvestorRelations
+    url: https://ir.jd.com/
+  - type: GitHub
+    url: https://github.com/jd-opensource
+  - type: TechBlog
+    url: https://tech.jd.com/
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/jd.com/
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
