@@ -358,6 +358,8 @@ authentication:
   - type: AccessKeySignature
     description: JD Cloud APIs authenticate with Access Key ID and Secret Access Key, signed per request with HMAC-SHA256.
 common:
+  - type: DomainSecurity
+    url: security/jd-com-domain-security.yml
   - type: Marketplace
     url: https://www.jd.com/
   - type: JDWorldwide
