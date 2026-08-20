@@ -34,6 +34,16 @@ position: Provider
 access: Partner
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/jd-com.png
 tags:
+  - E-Commerce
+  - Marketplace
+  - China
+  - Cloud Platform
+  - Logistics
+  - Retail
+  - JD Open Platform
+  - JD Cloud
+  - JOS
+tags_raw:
   - E-commerce
   - Marketplace
   - China
@@ -59,6 +69,9 @@ apis:
     baseURL: https://api.jd.com
     tags:
       - Authentication
+      - JOS
+    tags_raw:
+      - Authentication
       - OAuth
       - JOS
     properties:
@@ -74,6 +87,11 @@ apis:
     humanURL: https://open.jd.com/home/home#/doc/api?apiCateId=23
     baseURL: https://api.jd.com
     tags:
+      - Product
+      - SKUs
+      - Catalog
+      - Inventory
+    tags_raw:
       - Products
       - SKUs
       - Catalog
@@ -91,6 +109,10 @@ apis:
     humanURL: https://open.jd.com/home/home#/doc/api?apiCateId=26
     baseURL: https://api.jd.com
     tags:
+      - Order
+      - Fulfillment
+      - Customers
+    tags_raw:
       - Orders
       - Fulfillment
       - Customers
@@ -204,6 +226,11 @@ apis:
     humanURL: https://open.jd.com/home/home#/doc/common?listId=520
     baseURL: https://api.jd.com
     tags:
+      - Webhook
+      - Event
+      - Push
+      - Notification
+    tags_raw:
       - Webhooks
       - Events
       - Push
@@ -255,6 +282,11 @@ apis:
     humanURL: https://docs.jdcloud.com/cn/virtual-machines/api/overview
     baseURL: https://vm.jdcloud-api.com
     tags:
+      - Compute
+      - vm
+      - GPU
+      - Infrastructure-as-a-Service
+    tags_raw:
       - Compute
       - VM
       - GPU
@@ -320,6 +352,12 @@ apis:
     humanURL: https://docs.jdcloud.com/cn/ai-platform/api/overview
     baseURL: https://aiapi.jdcloud-api.com
     tags:
+      - OCR
+      - Vision
+      - Speech
+      - JoyBuilder
+      - Artificial Intelligence
+    tags_raw:
       - OCR
       - Vision
       - Speech
