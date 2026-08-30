@@ -294,9 +294,9 @@ apis:
     baseURL: https://vm.jdcloud-api.com
     tags:
       - Compute
-      - vm
+      - VM
       - GPU
-      - Infrastructure-as-a-Service
+      - IaaS
     tags_raw:
       - Compute
       - VM
