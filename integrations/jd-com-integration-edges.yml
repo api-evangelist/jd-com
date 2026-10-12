@@ -1,0 +1,22 @@
+generated: '2026-10-12'
+method: none
+source:
+- https://zapier.com/apps/jd-com/integrations
+- https://zapier.com/apps/jd/integrations
+- https://zapier.com/apps/jd-com-jingdong/integrations
+- https://n8n.io/integrations/jd-com/
+- https://n8n.io/integrations/jd/
+- https://composio.dev/toolkits/jd-com
+- https://monid.ai/tools/jd-com
+checked:
+- https://composio.dev/toolkits/jd-com
+- https://monid.ai/tools/jd-com
+- https://n8n.io/integrations/jd-com/
+- https://n8n.io/integrations/jd/
+- https://zapier.com/apps/jd-com-jingdong/integrations
+- https://zapier.com/apps/jd-com/integrations
+- https://zapier.com/apps/jd/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []
